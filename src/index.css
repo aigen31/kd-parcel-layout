@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply text-xl text-[#01859a] py-4 px-5 uppercase leading-6 border border-[#01859a] rounded-full flex gap-5 items-center font-medium;
+  }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>KD Layout</title>
+	<link rel="stylesheet" href="./index.css">
+	<script type="module" defer src="index.js"></script>
+</head>
+
+<body>
+	<include src="src/components/header.html"></include>
+
+	<section class="
+		h-screen bg-[url(images/main/bg-main.jpg)] bg-center bg-cover
+	">
+		<div class="
+		mx-auto px-4 flex justify-center items-center h-full flex-col
+		lg:max-w-[68.75rem]
+		">
+
+			<h1 class="
+			uppercase text-[#ccc] border-solid border border-[#ccc]
+			lg:text-[2.5rem] lg:px-3 lg:mb-36
+			">“Кухоный двор” и дизайнеры</h1>
+
+			<p class="
+			text-[#ccc] leading-none uppercase
+			 lg:text-xl lg:leading-none lg:tracking-[0.5em]
+			">Партнерство профессиональных дизайнеров и архитекторов</p>
+
+			<div class="
+			lg:ml-auto lg:flex lg:gap-5
+			">
+				<p class="
+				italic text-[#ccc]
+				">
+					У Вас есть интресные проекты?<br>
+					У нас есть все, чтобы воплотить их в жизнь
+				</p>
+
+				<button class="btn-primary">
+					Начать сотрудничество<img src="images/button/array-right.svg" alt="">
+				</button>
+			</div>
+
+			<ul class="
+			list-none m-0 p-0 w-full flex flex-col
+			lg:flex-row lg:justify-between lg:items-center
+			">
+				<li>
+					<div class="flex h-36 items-center mb-5">
+						<img src="images/figure-1.svg" alt="" class="
+					lg:w-28
+					">
+					</div>
+					<p class="
+					leading-none text-[#ccc]
+					lg:text-xl
+					">
+						<span class="font-medium">Более 25 лет</span><br>
+						работы на рынке
+					</p>
+				</li>
+				<li>
+					<div class="flex h-36 items-center mb-5">
+						<img src="images/figure-2.svg" alt="" class="
+						lg:w-28
+						">
+					</div>
+					<p class="
+					leading-none text-[#ccc]
+					lg:text-xl
+					">
+						Широкое<br>
+						<span class="font-medium">разнообразие</span><br>
+						материалов
+					</p>
+				</li>
+				<li>
+					<div class="flex h-36 items-center mb-5">
+						<img src="images/figure-3.svg" alt="" class="
+						lg:w-28
+						">
+					</div>
+					<p class="
+					leading-none text-[#ccc]
+					lg:text-xl
+					">
+						Кухни и корпусная<br>
+						мебель<br>
+						<span class="font-medium">для всего дома</span>
+					</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+</body>
+
+</html>
