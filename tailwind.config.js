@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
 			fontFamily: {
-				'pf': '"PF"'
+				'sans': ['"PF"', 'ui-sans-serif', 'system-ui'],
+				'intro': ['"Intro"', 'ui-sans-serif', 'system-ui']
 			}
 		},
   },

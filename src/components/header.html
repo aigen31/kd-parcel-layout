@@ -1,10 +1,23 @@
-<header class="header-main bg-black 2xl:pt-6 2xl:pb-6 text-[#ccc]" x-data="{
+<header class="bg-black py-4
+2xl:pt-6 2xl:pb-6 text-[#ccc]
+" x-data="{
 	open: false,
 	toggleOpen() {
 		this.open = !this.open
 	},
+	init() {
+		window.addEventListener('click', (event) => {
+			const target = event.target
+			if (target !== document.querySelector('#menu') && target !== document.querySelector('#menu-button')) {
+				this.open = false
+			}
+		})
+	}
 }">
-	<div class="max-w-[103.125rem] mx-auto px-4 flex justify-between items-center">
+	<div class="
+	max-w-[103.125rem] mx-auto px-4 flex items-center
+	lg:justify-between
+	">
 		<a class="2xl:w-28 2xl:-mt-2" href="#">
 			<img class="
 				w-12
@@ -12,62 +25,26 @@
 			" src="images/logo-main.svg" alt="">
 		</a>
 
-		<div class="
-		flex flex-col fixed top-0 -right-full bg-black max-w-80 transition-all h-screen gap-10 p-6 justify-between
-		lg:relative lg:right-auto lg:top-auto lg:h-auto lg:flex-row lg:max-w-none
-		" :class="open ? 'right-0' : ''">
-
-			<div class="
-			lg:flex gap-x-20 items-center
-			">
-				<form method="post" class="
-				flex mb-10 items-center gap-3
-				lg:mb-0 lg:gap-0
-				">
-					<label for="search">
-						<img src="images/search-main.svg" class="
-						w-5
-						lg:w-8
-						" alt="">
-					</label>
-					<input type="text" name="search" id="search" class="
-						bg-transparent p-3 uppercase border-none outline-none leading-5 w-24 text-sm
-						lg:text-[1.0625rem]
-						" placeholder="Поиск">
-				</form>
-
-				<ul class="
-				list-none uppercase flex flex-col gap-4 text-nowrap text-sm
-				lg:gap-11 lg:flex-row lg:text-[1.0625rem]
-				">
-					<li><a href="#" class="hover:text-[#01859a] transition-colors">Домой</a></li>
-					<li><a href="#" class="hover:text-[#01859a] transition-colors">О нас</a></li>
-					<li><a href="#" class="hover:text-[#01859a] transition-colors">Сервис</a></li>
-					<li><a href="#" class="hover:text-[#01859a] transition-colors">Портфолио</a></li>
-					<li><a href="#" class="hover:text-[#01859a] transition-colors">Контакты</a></li>
-				</ul>
-			</div>
-
-			<ul class="list-none flex gap-8 items-center">
-				<li><a href="#">
-						<img src="images/vk-main.svg" alt="">
-					</a></li>
-				<li><a href="#">
-						<img src="images/ok-main.svg" alt="">
-					</a></li>
+		<div class="ml-auto flex items-center">
+			<ul class="
+		list-none flex items-center gap-11
+		lg:hidden lg:gap-8
+		">
 				<li><a href="#">
 						<img src="images/tg-main.svg" alt="">
 					</a></li>
 				<li><a href="#">
-						<img src="images/dz-main.svg" alt="">
+						<img src="images/whatsapp-main.svg" alt="">
 					</a></li>
 			</ul>
-		</div>
 
-		<button x-on:click="toggleOpen()" class="
-			hamburger relative lg:hidden w-8 py-2 px-1
+			<include src="src/components/menu.html"></include>
+
+			<button id="menu-button" x-on:click="toggleOpen()" class="
+			hamburger relative lg:hidden w-8 py-2 px-1 ml-9
 			before:mb-3 before:content-[''] before:block before:relative before:w-full before:h-px before:bg-white after:content-['']
 			after:block after:relative after:w-full after:h-px after:bg-white
 			"></button>
+		</div>
 	</div>
 </header>
