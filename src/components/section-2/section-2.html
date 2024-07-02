@@ -77,70 +77,18 @@
 				list-none m-0 p-0 flex flex-col gap-12
 				xl:gap-20
 				">
-					<li class="
-					flex items-start gap-4
-					lg:gap-11
-					">
-						<span class="
-						font-thin text-[#ccc] text-[5rem]/[0.9]
-						lg:text-8xl
-						">
-							1
-						</span>
-						<p class="
-						text-[#ccc] text-base/6
-						lg:text-xl/none
-						">
-							Разрабатывать
-							дизайн-проекты
-							в любом удобном
-							салоне КД в Москве
-							и Подмосковье.
-						</p>
-					</li>
-					<li class="
-					flex items-start gap-4
-					lg:gap-11
-					">
-						<span class="
-						font-thin text-[5rem]/[0.9] text-[#ccc]
-						lg:text-8xl
-						">
-							2
-						</span>
-						<p class="
-						text-[#ccc] text-base/6
-						lg:text-xl/none
-						">
-							Встречаться
-							и обсуждать
-							проекты с клиентами
-							в наших удобных
-							коворкинг-зонах.
-						</p>
-					</li>
-					<li class="
-					flex items-start gap-4
-					lg:gap-11
-					">
-						<span class="
-						font-thin text-[5rem]/[0.9] text-[#ccc]
-						lg:text-8xl
-						">
-							3
-						</span>
-						<p class="
-						text-[#ccc] text-base/6
-						lg:text-xl/none
-						">
-							Создавать
-							и рассчитать
-							стоимость проекта
-							удалённо, в том числе
-							через видеосвязь
-							и мессенджеры!
-						</p>
-					</li>
+					<include src="src/components/section-2/number-item.html" locals='{
+						"number": "1",
+						"text": "Разрабатывать дизайн-проекты в любом удобном салоне КД в Москве и Подмосковье."
+					}'></include>
+					<include src="src/components/section-2/number-item.html" locals='{
+						"number": "2",
+						"text": "Встречаться и обсуждать проекты с клиентами в наших удобных коворкинг-зонах."
+					}'></include>
+					<include src="src/components/section-2/number-item.html" locals='{
+						"number": "3",
+						"text": "Создавать и рассчитать стоимость проекта удалённо, в том числе через видеосвязь и мессенджеры!"
+					}'></include>
 				</ul>
 			</div>
 		</div>
