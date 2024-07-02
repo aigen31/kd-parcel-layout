@@ -1,6 +1,6 @@
-<header class="bg-black py-4
-2xl:pt-6 2xl:pb-6 text-[#ccc]
-" x-data="{
+<header
+  class="bg-black py-4 text-[#ccc] lg:pb-6 lg:pt-6"
+  x-data="{
 	open: false,
 	toggleOpen() {
 		this.open = !this.open
@@ -13,38 +13,36 @@
 			}
 		})
 	}
-}">
-	<div class="
-	max-w-[103.125rem] mx-auto px-4 flex items-center
-	lg:justify-between
-	">
-		<a class="2xl:w-24 2xl:-mt-2" href="#">
-			<img class="
-				w-12
-				xl:w-28
-				" src="images/logo-main.svg" alt="">
-		</a>
+}"
+>
+  <div
+    class="mx-auto flex max-w-[103.125rem] items-center px-4 lg:justify-between"
+  >
+    <a class="2xl:-mt-2 2xl:w-24" href="#">
+      <img class="w-12 xl:w-28" src="images/logo-main.svg" alt="" />
+    </a>
 
-		<div class="ml-auto flex items-center">
-			<ul class="
-		list-none flex items-center gap-11
-		lg:hidden lg:gap-8
-		">
-				<li><a href="#">
-						<img src="images/tg-main.svg" alt="">
-					</a></li>
-				<li><a href="#">
-						<img src="images/whatsapp-main.svg" alt="">
-					</a></li>
-			</ul>
+    <div class="ml-auto flex items-center">
+      <ul class="flex list-none items-center gap-11 lg:hidden lg:gap-8">
+        <li>
+          <a href="#">
+            <img src="images/tg-main.svg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/whatsapp-main.svg" alt="" />
+          </a>
+        </li>
+      </ul>
 
-			<include src="src/components/header/menu.html"></include>
+      <include src="src/components/header/menu.html"></include>
 
-			<button id="menu-button" x-on:click="toggleOpen()" class="
-			hamburger relative lg:hidden w-8 py-2 px-1 ml-9
-			before:mb-3 before:content-[''] before:block before:relative before:w-full before:h-px before:bg-white after:content-['']
-			after:block after:relative after:w-full after:h-px after:bg-white
-			"></button>
-		</div>
-	</div>
+      <button
+        id="menu-button"
+        x-on:click="toggleOpen()"
+        class="hamburger relative ml-9 w-8 px-1 py-2 before:relative before:mb-3 before:block before:h-px before:w-full before:bg-white before:content-[''] after:relative after:block after:h-px after:w-full after:bg-white after:content-[''] lg:hidden"
+      ></button>
+    </div>
+  </div>
 </header>

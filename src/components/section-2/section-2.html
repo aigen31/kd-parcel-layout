@@ -1,96 +1,81 @@
 <section class="bg-[#272727]">
-	<div class="
-	flex flex-col
-	xl:flex-row
-	">
-		<div class="
-		flex flex-col justify-between items-start py-20 px-4
-		xl:h-[80vh] xl:px-24 xl:pt-56 xl:pb-36 xl:w-[36.25rem]
-		">
-			<div class="">
-				<h2 class="
-				text-[#ccc] font-intro uppercase mb-8 text-3xl/10
-				lg:text-3xl/none xl:mb-20
-				">
-					От дизайнеров
-					для дизайнеров!
-				</h2>
+  <div class="flex flex-col xl:flex-row">
+    <div
+      class="flex flex-col items-start justify-between px-4 py-20 lg:pb-36 lg:pt-56 xl:h-[80vh] xl:w-[36.25rem] xl:px-24"
+    >
+      <div class="">
+        <h2
+          class="mb-8 font-intro text-3xl/10 uppercase text-[#ccc] lg:text-3xl/none xl:mb-20"
+        >
+          От дизайнеров для дизайнеров!
+        </h2>
 
-				<p class="
-				text-[#ccc] text-lg/6
-				lg:text-xl/none
-				">
-					Для Вашей комфортной работы мы создали
-					уникальную деловую и творческую экосистему!
-				</p>
-			</div>
+        <p class="text-lg/6 text-[#ccc] lg:text-xl/none">
+          Для Вашей комфортной работы мы создали уникальную деловую и творческую
+          экосистему!
+        </p>
+      </div>
 
-			<button class="
-			btn-primary mt-6
-			lg:px-12
-			">
-				Узнать больше<img src="images/button/array-right.svg" alt="">
-			</button>
-		</div>
+      <button class="btn-primary mt-6 lg:px-12">
+        Узнать больше<img src="images/button/array-right.svg" alt="" />
+      </button>
+    </div>
 
-		<div class="
-		flex flex-col bg-[url(images/section-2/bg.jpg)] bg-center bg-cover
-		md:flex-row flex-grow
-		">
-			<div class="
-			flex flex-col items-start pt-16 pb-10 px-4
-			xl:justify-between xl:px-24 xl:pt-56 xl:pb-36 xl:w-[36.25rem] xl:pl-28 xl:pr-12 xl:h-[80vh]
-			">
-				<div class="">
-					<h2 class="
-					text-[#ccc] font-intro uppercase mb-8 text-3xl/10
-					lg:text-3xl/none xl:mb-20
-					">
-						Чем мы полезны
-						для вас?
-					</h2>
+    <div
+      class="flex flex-grow flex-col bg-[url(images/section-2/bg.jpg)] bg-cover bg-center md:flex-row"
+    >
+      <div
+        class="flex flex-col items-start px-4 pb-10 pt-16 lg:pb-36 lg:pt-56 xl:h-[80vh] xl:w-[36.25rem] xl:justify-between xl:px-24 xl:pl-28 xl:pr-12"
+      >
+        <div class="">
+          <h2
+            class="mb-8 font-intro text-3xl/10 uppercase text-[#ccc] lg:text-3xl/none xl:mb-20"
+          >
+            Чем мы полезны для вас?
+          </h2>
 
-					<p class="
-					text-[#ccc] text-lg/6
-					lg:text-xl/none
-					">
-						Как талантливый дизайнер, Вы цените своё время
-						и профессионализм брендов-партнёров.
-						«Кухонный Двор» разделяет Ваши ценности!
-						С нами Вы сможете:
-					</p>
-				</div>
+          <p class="text-lg/6 text-[#ccc] lg:text-xl/none">
+            Как талантливый дизайнер, Вы цените своё время и профессионализм
+            брендов-партнёров. «Кухонный Двор» разделяет Ваши ценности! С нами
+            Вы сможете:
+          </p>
+        </div>
 
-				<button class="
-				btn-primary mt-6
-				lg:px-12 lg:mt-0
-				">
-					Начать сотрудничество<img src="images/button/array-right.svg" alt="">
-				</button>
-			</div>
+        <button class="btn-primary mt-6 lg:mt-0 lg:px-12">
+          Начать сотрудничество<img
+            src="images/button/array-right.svg"
+            alt=""
+          />
+        </button>
+      </div>
 
-			<div class="
-			bg-[#454545D9] px-4 pt-10 pb-10
-			xl:pl-20 xl:pr-16 xl:py-36 xl:w-96
-			">
-				<ul class="
-				list-none m-0 p-0 flex flex-col gap-12
-				xl:gap-20
-				">
-					<include src="src/components/section-2/number-item.html" locals='{
+      <div
+        class="bg-[#454545D9] px-4 pb-10 pt-10 xl:w-96 xl:py-36 xl:pl-20 xl:pr-16"
+      >
+        <ul class="m-0 flex list-none flex-col gap-12 p-0 xl:gap-20">
+          <include
+            src="src/components/section-2/number-item.html"
+            locals='{
 						"number": "1",
 						"text": "Разрабатывать дизайн-проекты в любом удобном салоне КД в Москве и Подмосковье."
-					}'></include>
-					<include src="src/components/section-2/number-item.html" locals='{
+					}'
+          ></include>
+          <include
+            src="src/components/section-2/number-item.html"
+            locals='{
 						"number": "2",
 						"text": "Встречаться и обсуждать проекты с клиентами в наших удобных коворкинг-зонах."
-					}'></include>
-					<include src="src/components/section-2/number-item.html" locals='{
+					}'
+          ></include>
+          <include
+            src="src/components/section-2/number-item.html"
+            locals='{
 						"number": "3",
 						"text": "Создавать и рассчитать стоимость проекта удалённо, в том числе через видеосвязь и мессенджеры!"
-					}'></include>
-				</ul>
-			</div>
-		</div>
-	</div>
+					}'
+          ></include>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
