@@ -1,54 +1,72 @@
-<div id="menu" class="
-		flex flex-col fixed top-0 -right-full bg-black max-w-80 transition-all h-screen gap-10 p-6 justify-between z-50
-		lg:relative lg:right-auto lg:top-auto lg:h-auto lg:flex-row lg:max-w-none lg:p-0
-		" :class="open ? 'right-0' : ''">
+<div
+  id="menu"
+  class="fixed -right-full top-0 z-50 flex h-screen max-w-80 flex-col justify-between gap-10 bg-black p-6 transition-all lg:relative lg:right-auto lg:top-auto lg:h-auto lg:max-w-none lg:flex-row lg:p-0"
+  :class="open ? 'right-0' : ''"
+>
+  <div class="items-center gap-x-20 lg:flex">
+    <form
+      id="search-form"
+      method="post"
+      class="mb-10 flex items-center gap-3 lg:mb-0 lg:gap-0"
+    >
+      <label for="search">
+        <img src="images/search-main.svg" class="w-5 lg:w-8" alt="" />
+      </label>
+      <input
+        type="text"
+        name="search"
+        id="search"
+        class="w-24 border-none bg-transparent p-3 text-sm uppercase leading-5 outline-none lg:text-[1.0625rem]"
+        placeholder="Поиск"
+      />
+    </form>
 
-	<div class="
-			lg:flex gap-x-20 items-center
-			">
-		<form id="search-form" method="post" class="
-				flex mb-10 items-center gap-3
-				lg:mb-0 lg:gap-0
-				">
-			<label for="search">
-				<img src="images/search-main.svg" class="
-						w-5
-						lg:w-8
-						" alt="">
-			</label>
-			<input type="text" name="search" id="search" class="
-						bg-transparent p-3 uppercase border-none outline-none leading-5 w-24 text-sm
-						lg:text-[1.0625rem]
-						" placeholder="Поиск">
-		</form>
+    <ul
+      class="flex list-none flex-col gap-4 text-nowrap text-sm uppercase lg:flex-row lg:gap-11 lg:text-[1.0625rem]"
+    >
+      <li>
+        <a href="#" class="transition-colors hover:text-[#01859a]">Домой</a>
+      </li>
+      <li>
+        <a href="#" class="transition-colors hover:text-[#01859a]">О нас</a>
+      </li>
+      <li>
+        <a href="#" class="transition-colors hover:text-[#01859a]">Сервис</a>
+      </li>
+      <li>
+        <a href="#" class="transition-colors hover:text-[#01859a]">Портфолио</a>
+      </li>
+      <li>
+        <a href="#" class="transition-colors hover:text-[#01859a]">Контакты</a>
+      </li>
+    </ul>
+  </div>
 
-		<ul class="
-				list-none uppercase flex flex-col gap-4 text-nowrap text-sm
-				lg:gap-11 lg:flex-row lg:text-[1.0625rem]
-				">
-			<li><a href="#" class="hover:text-[#01859a] transition-colors">Домой</a></li>
-			<li><a href="#" class="hover:text-[#01859a] transition-colors">О нас</a></li>
-			<li><a href="#" class="hover:text-[#01859a] transition-colors">Сервис</a></li>
-			<li><a href="#" class="hover:text-[#01859a] transition-colors">Портфолио</a></li>
-			<li><a href="#" class="hover:text-[#01859a] transition-colors">Контакты</a></li>
-		</ul>
-	</div>
-
-	<ul class="list-none flex gap-8 items-center">
-		<li><a href="#">
-				<img src="images/vk-main.svg" alt="">
-			</a></li>
-		<li><a href="#">
-				<img src="images/ok-main.svg" alt="">
-			</a></li>
-		<li><a href="#">
-				<img src="images/tg-main.svg" alt="">
-			</a></li>
-		<li><a href="#">
-				<img src="images/dz-main.svg" alt="">
-			</a></li>
-		<li><a href="#">
-				<img src="images/whatsapp-main.svg" alt="">
-			</a></li>
-	</ul>
+  <ul class="flex list-none items-center gap-8">
+    <li>
+      <a href="#">
+        <img src="images/vk-main.svg" alt="" />
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="images/ok-main.svg" alt="" />
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="images/tg-main.svg" alt="" />
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="images/dz-main.svg" alt="" />
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="images/whatsapp-main.svg" alt="" />
+      </a>
+    </li>
+  </ul>
 </div>

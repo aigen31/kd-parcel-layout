@@ -3,5 +3,6 @@
 		"src/**/*.css"
 	],
 	"editor.formatOnPaste": true,
-	"editor.formatOnSave": true
+	"editor.formatOnSave": true,
+	"editor.insertSpaces": true
 }

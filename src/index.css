@@ -1,3 +1,4 @@
+@import url(../node_modules/@glidejs/glide/dist/css/glide.core.min.css);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -174,6 +175,6 @@
 
 @layer components {
 	.btn-primary {
-		@apply gap-4 justify-center w-full lg:w-auto text-lg py-[.875rem] px-11 lg:text-xl text-[#01859a] lg:py-4 lg:px-5 uppercase leading-6 border border-[#01859a] rounded-full inline-flex lg:gap-5 lg:min-w-[20.625rem] md:justify-between items-center font-medium;
+		@apply gap-4 justify-center w-full sm:w-auto text-lg py-[.875rem] px-11 lg:text-xl text-[#01859a] lg:py-4 lg:px-5 uppercase leading-6 border border-[#01859a] rounded-full inline-flex lg:gap-5 lg:min-w-[20.625rem] md:justify-between items-center font-medium;
 	}
 }
